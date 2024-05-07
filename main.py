@@ -3,6 +3,7 @@ import sys
 import os
 import Busca_minitas_aña
 import colores
+import tictactoe
 
 
 FONT = 'couriernew'
@@ -94,6 +95,11 @@ while running:
                 screen.fill((255, 255, 255))
                 #colores.run_game_colors()
 
+            if 650 >= mouse[0] >= 580 and 390 >= mouse[1] >= 249:
+                running = False
+                screen.fill((255, 255, 255))
+                tictactoe.run_game_tictactoe()
+
             if False:
                 # if 250 + 200 >= mouse[0] >= 250 and 190 + 50 >= mouse[1] >= 190:
                 running = False
@@ -105,5 +111,5 @@ while running:
     draw_state(screen, 80, 259, 'Assets/images', 'mine.png')
     draw_state(screen, 250, 259, 'Assets/images', 'colres.jpg')
     draw_state(screen, 420, 259, 'Assets/images', 'casas.jpg')
-
+    draw_state(screen, 590, 259, 'Assets/images', 'tictactoe.png')
     pygame.display.update()
