@@ -4,10 +4,11 @@ import os
 import Busca_minitas_aña
 import colores
 import tictactoe
+import casas
 
 
 FONT = 'couriernew'
-WIDTH, HEIGHT = 800, 650
+WIDTH, HEIGHT = 1100, 700
 LINE_COLOR = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
@@ -93,6 +94,7 @@ while running:
             if 510 >= mouse[0] >= 410 and 390 >= mouse[1] >= 249:
                 running = False
                 screen.fill((255, 255, 255))
+                casas.run_game_casas()
                 #colores.run_game_colors()
 
             if 650 >= mouse[0] >= 580 and 390 >= mouse[1] >= 249:
